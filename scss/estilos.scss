@@ -1,0 +1,58 @@
+//-----------------------------
+//			PATRON DE COLORES
+//-----------------------------
+$principal: #ff401c;
+$texto: #44484a;
+
+/*---------------------------------------
+SOBREESCRIBIENDO LOS ESTILOS DE BOOTSTRAP
+---------------------------------------*/
+
+.bg-primary{
+	background: $principal !important;
+}
+.text-primary{
+	color:$principal !important;
+}
+.btn-primary{
+	background:$principal !important;
+	border-color: darken($principal,20%) !important;
+}
+.btn-primary:hover,
+.btn-primary:focus{
+	background:darken($principal,10%) !important;
+}
+.btn-primary:active{
+	background:darken($principal,20%) !important;
+	border-color: darken($principal,30%) !important;
+}
+.btn-primary:focus{
+	box-shadow: 0 0 0 0.2rem rgba($principal,.5) !important;
+}
+/*---------------
+ESTILOS DE DISEÑO
+---------------*/
+
+html{
+	font-size: 16px;
+}
+
+body{
+	color: $texto;
+	font-family: 'Open Sans', sans-serif;
+	font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.card:hover{
+	box-shadow: 0 0 10px #33323285;
+}
+
+/*-----------------------
+SHOW DE LSO MEDIAS QUERIE
+-----------------------*/
+
+@media(min-width: 768px){
+	html{
+		font-size: 21px;
+	}
+}
